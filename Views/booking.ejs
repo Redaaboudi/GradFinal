@@ -80,12 +80,12 @@
               <div class="mb-3">
                 <legend>Enter Address*</legend>
                 <label for="citySelect" class="form-label">City:</label>
-                <select id="citySelect" onchange="populateDistricts()" name="city">
+                <select id="citySelect" onchange="populateDistricts()" name="city" required>
                   <option value="Amman">Amman</option>
                   <option value="Zaqra">Zaqra</option>
                 </select>
                 <label for="districtSelect" class="form-label">District:</label>
-                <select id="districtSelect" name="district"></select>
+                <select id="districtSelect" name="district" required></select>
               </div>
             </fieldset>
             <div class="mb-3">
@@ -98,14 +98,14 @@
               <div class="mb-3">
                 <legend>Select Time*</legend>
                 <label for="disabledSelect" class="form-label">Time</label>
-                <select id="hours" name="hours"></select>
-                <select id="minutes" name="minutes"></select>
+                <select id="hours" name="hours" required></select>
+                <select id="minutes" name="minutes" required></select>
               </div>
               <div class="mb-3">
                 <legend>Select Date*</legend>
                 <label for="disabledSelect" class="form-label">Date</label>
-                <select id="day" name="day"></select>
-                <select id="month" name="month"></select>
+                <select id="day" name="day" required></select>
+                <select id="month" name="month" required></select>
               </div>
             </fieldset>
           </div>
@@ -113,11 +113,11 @@
             <div class="mb-4 row">
               <div class="col">
                 <label for="carMake1" class="form-label fw-semibold">Car Make*</label>
-                <input type="text" class="form-control" id="carMake1" name="carMake">
+                <input type="text" class="form-control" id="carMake1" name="carMake" required>
               </div>
               <div class="col">
                 <label for="carModel1" class="form-label fw-semibold">Car Model*</label>
-                <input type="text" class="form-control" id="carModel1" name="carModel">
+                <input type="text" class="form-control" id="carModel1" name="carModel" required>
               </div>
             </div>
             <div class="mb-3">
@@ -128,11 +128,11 @@
               <label for="" class="mb-3 fw-semibold">Select Size:</label>
               <div class="col">
                 <label for="option1">Small</label>
-                <input type="radio" id="option1"  value="small" name="options">
+                <input type="radio" id="option1"  value="small" name="options" required>
               </div>
               <div class="col">
                 <label for="option2">Large</label>
-                <input type="radio" id="option2" name="options" value="large" onclick="showPrice('option2')">
+                <input type="radio" id="option2" name="options" value="large" onclick="showPrice('option2')" required> 
                 <span id="priceDisplay"></span>
               </div>
             </div>
@@ -145,35 +145,35 @@
                         <h5 class="radioBtnText">Regular</h5>
                         <p class="ms-2 fw-light">5 JDs</p>
                     </div>
-                    <input class="radioBtn" type="radio" id="option1" name="service" value="Regular">
+                    <input class="radioBtn" type="radio" id="option1" name="service" value="Regular" required>
                 </div>
                 <div class="clickable-div d-flex gap-2 justify-content-between bg-light px-3 rounded-2" id="clickableDiv">
                     <div>
                         <h5 class="radioBtnText">Regular with Rims Detailing</h5>
                         <p class="ms-2 fw-light">6 JDs</p>
                     </div>
-                    <input class="radioBtn" type="radio" id="option1" name="service" value="Regular with Rims Detailing">
+                    <input class="radioBtn" type="radio" id="option1" name="service" value="Regular with Rims Detailing" required>
                 </div>
                 <div class="clickable-div d-flex gap-2 justify-content-between bg-light px-3 rounded-2" id="clickableDiv">
                     <div>
                         <h5 class="radioBtnText">Regular with Engine Wash</h5>
                         <p class="ms-2 fw-light">8 JDs</p>
                     </div>
-                    <input class="radioBtn" type="radio" id="option1" name="service" value="Regular with Engine Wash">
+                    <input class="radioBtn" type="radio" id="option1" name="service" value="Regular with Engine Wash" required>
                 </div>
                 <div class="clickable-div d-flex gap-2 justify-content-between bg-light px-3 rounded-2" id="clickableDiv">
                     <div>
                         <h5 class="radioBtnText">Dry Clean</h5>
                         <p class="ms-2 fw-light">20 JDs</p>
                     </div>
-                    <input class="radioBtn" type="radio" id="option1" name="service" value="Dry Clean">
+                    <input class="radioBtn" type="radio" id="option1" name="service" value="Dry Clean" required>
                 </div>
                 <div class="clickable-div d-flex gap-2 justify-content-between bg-light px-3 rounded-2" id="clickableDiv">
                     <div>
                         <h5 class="radioBtnText">Full Service</h5>
                         <p class="ms-2 fw-light">25 JDs</p>
                     </div>
-                    <input class="radioBtn" type="radio" id="option1" name="service" value="Full Service">
+                    <input class="radioBtn" type="radio" id="option1" name="service" value="Full Service" required>
                 </div>
             </div>
         </section>
