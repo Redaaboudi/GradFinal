@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" >
+        <div class="container d-flex">
+          <a class="navbar-brand" href="home"><img src="Assets/sampleLogo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-primary fw-bold active" aria-current="page" href="home">Home</a>
+              <a class="nav-link" href="signIn">Contact</a>
+              <a class="nav-link" href="signIn">Login</a>
+              <a class="nav-link" href="#aboutUs">About Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="signInBlock d-flex flex-column">
+        <div class="m-auto loginBox">
+            <section class="m-auto text-center">
+                <h1 class="text-light">Welcome</h1>
+                <p class="text-light-emphasis">Create an account</p>
+            </section>            <section>
+                <form class="m-auto" action="/signUp" method="POST">
+                    <div class="mb-3">
+                        <label for="fname" class="form-label text-light">First Name</label>
+                        <input type="name" class="form-control" id="fname" name="firstname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lname" class="form-label text-light">Last Name</label>
+                        <input type="name" class="form-control" id="lname" name="lastname">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Example@gmail.com" name="email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label text-light">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary d-flex m-auto bg-black">SignUp</button>
+                  </form>
+            </section>
+        </div>
+    </div>
+    <div class="about-us container d-flex ">
+      <div class="bg-primary m-auto py-4 px-5">
+        <p id="aboutUs" class="text-light">About Us</p>
+        <p id="aboutUsP" class="text-black">At our online car wash, we're dedicated to revolutionizing the way you care for your vehicle. With a passion for pristine cars and a commitment to convenience, we bring the ultimate car washing experience to your fingertips. Our platform offers a seamless, user-friendly interface where you can effortlessly schedule a top-tier car wash from the comfort of your home. We understand the value of time and the desire for a sparkling clean vehicle, which is why we've designed our service to be efficient, reliable, and tailored to meet your needs. Trust us to deliver a superior car wash experience, leaving your vehicle shining and you with more time to enjoy the ride.</p>
+        <div class=" m-auto justify-content-between d-flex gap-5">
+          <a class="rounded-button   " href="policy" id="btn1">Privacy and policy </a>
+          <a class="rounded-button " href="terms" id="btn1"> Terms and conditions</a>
+      </div>
+      </div>
+</div>
+
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="ratingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ratingModalLabel">Contact Information</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Rating content goes here -->
+              <p>00962778134480</p>
+              <p>washme@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+      const ratingLink = document.querySelector('a[href="signIn"]');
+      // Add an event listener to handle click on the "Rating" link
+      ratingLink.addEventListener('click', function(event) {
+       // Prevent the default link behavior
+      event.preventDefault();
+      // Show the modal when the link is clicked
+      const contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+      contactModal.show();
+      });
+      </script>
+    <script src="js/script.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

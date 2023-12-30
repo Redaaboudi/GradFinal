@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100hv;
+    background-color: #1D6ADE;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.logo {
+    position: absolute;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.firstSection{
+    width: 90%;
+    margin: auto;
+}
+
+.firstSection img {
+    width: 100%;
+}
+
+.bookNow a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    background-color: #1D6ADE;
+    padding: 10px;
+    border-radius: 2ch;
+}
+
+.pricePage {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+}
+
+.priceTable td, .small {
+    text-align: center;
+}
+
+.serviceType {
+    font-weight: bold;
+}
+
+#mainTh {
+    font-weight: 900;
+}
+
+.services {
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 20px;
+    color: #1D6ADE;
+}
+
+.services p {
+    font-size: 15px;
+}
+
+#serviceParagraph{
+    height: 100vh;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+    height: 100vh;
+}
+
+#aboutUs {
+    font-size: 30px;
+}
+
+
+
+#aboutUsP {
+    font-size: 15px;
+}
+
+.signInBlock {
+    height: 100vh;
+}
+
+.loginBox {
+    background-color: #1D6ADE;
+    padding: 50px;
+    border-radius: 2ch;
+}
+
+#mapImage {
+    width: 200px;
+    height: 90px;
+}
+
+.register-link {
+    color: white; /* Change the color to your preference */
+    text-decoration: none; /* Adding underline for the link */
+}
+
+.register-link:hover {
+    /* Optional: Add hover effect */
+    text-decoration: none; /* Remove underline on hover */
+    color: black; /* Change color on hover */
+}
+
+.radioBtnText {
+    margin-top: 12px;
+}
+
+.bookingService {
+    height: 100vh;
+}
+
+.clickable-div {
+    cursor: pointer;
+}
+
+.dialogBox {
+    display: none;
+}
+
+.clickable-div:hover .dialogBox{
+    display: block;
+}
+
+.serviceButton1 {
+    color: #ffffff;
+}
+
+#btn1 {
+    color: #ffffff;
+}
+
+.visaCash {
+    height: 100vh;
+}
+.confirm{
+    height: 100vh;
+}
+
+.image1 {
+    width: 120px;
+}
+
+.image2 {
+    width: 80px;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+.rounded-button {
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 30px; /* Adjust the border-radius as needed */
+    border: 1px solid #333; /* Border color */
+    background-color: transparent; /* No background color */
+    color: #333; /* Text color */
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rounded-button:hover {
+    background-color: #333; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+/* .profileContainer {
+    height: 100vh;
+} */
+
+.profileContainerImage {
+    width: 170px;
+    border-radius: 50%;
+}
+
+
+  
